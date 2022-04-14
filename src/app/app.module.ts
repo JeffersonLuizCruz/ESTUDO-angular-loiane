@@ -14,6 +14,8 @@ import { MeuPrimeiro2Component } from './meu-primeiro2/meu-primeiro2.component';
   ],
   imports: [
     BrowserModule,
+    //@Ex-01
+    // Esse importe pertence ao modulo curso.module.ts
     CursosModule
   ],
   providers: [],
