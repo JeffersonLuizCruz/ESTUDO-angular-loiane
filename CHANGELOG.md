@@ -1,3 +1,9 @@
+13/04/2022
+Add
+Estudo sobre criação de compomente privado ao modulo do compomente.
+Estudo da diretiva *ngForm
+Terminar o curso: https://www.youtube.com/watch?v=bBFScNfW904&list=PLGxZ4Rq3BOBoSRcKWEdQACbUCNWLczg2G&index=8
+
 12/04/2022
 Add
 Estudando a criação de modulos e importação dele no app-module
