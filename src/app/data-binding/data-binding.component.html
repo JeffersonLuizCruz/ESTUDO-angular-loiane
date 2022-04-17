@@ -1,0 +1,27 @@
+<section class="property-bindin" id="">
+<article>
+  <h3>Interpolação</h3>
+  <p>Exemplo 01</p>
+  <p>Usando interpolação: {{ url }}</p>
+
+  <p>Exemplo 02</p>
+  <p>Soma de 1 + 1 o resultado é : {{ 1 + 1 }}</p>
+
+  <p>Exemplo 03</p>
+  <p>transforma valor de real em dolar. Valor de 5 reais : {{ 5 * getDolar() }} dolar</p>
+
+  <p>Exemlo 04 Boolean</p>
+  <p>Você curtiu o curso Angular? {{ cursoAngular && getCurtirCursoangular() }}</p>
+</article>
+<article>
+<p>Propery Bindin</p>
+<p>Exemplo 01 de Property Bindin</p>
+<img src="{{ urlImg }}">
+
+<p>Exemplo 02 de Property Bindin</p>
+<img [src]="urlImg">
+
+<p>Exemplo 03 de Property Bindin</p>
+<img bind-src="urlImg">
+</article>
+</section>

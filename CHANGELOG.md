@@ -1,3 +1,8 @@
+17/04/2022
+Add
+Estudo sobre property binding
+https://www.youtube.com/watch?v=rlVxG2lG1Tk&list=PLGxZ4Rq3BOBoSRcKWEdQACbUCNWLczg2G&index=10
+
 13/04/2022
 Add
 Estudo sobre criação de compomente privado ao modulo do compomente.
