@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CursosComponent } from './cursos.component';
 import { CursosDetalhesComponent } from './cursos-detalhes/cursos-detalhes.component';
+import { CursosService } from './cursos.service';
 
 
 
@@ -20,6 +21,7 @@ import { CursosDetalhesComponent } from './cursos-detalhes/cursos-detalhes.compo
   // você terá que importar no app.module.ts
   exports: [
     CursosComponent
-  ]
+  ],
+  providers: []
 })
 export class CursosModule { }

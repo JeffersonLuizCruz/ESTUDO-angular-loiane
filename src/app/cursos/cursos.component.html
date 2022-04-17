@@ -4,8 +4,17 @@
 <h3>Uso de interpolação</h3>
 <p>Exemplo de uso com interpolação: {{website}}</p>
 
+<h3>Cursos com variável estática</h3>
+<ul>
+  <li *ngFor="let curso of cursos">
+    {{curso}}
+  </li>
+  <br>
+</ul>
+<h3>Uso do padrão Service com injeção de dependência</h3>
 <ul>
   <li *ngFor="let pessoa of pessoas">
     {{pessoa}}
   </li>
+  <br>
 </ul>
