@@ -5,6 +5,7 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AlertModule } from 'ngx-bootstrap/alert';
 
 
 
@@ -17,11 +18,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     TooltipModule.forRoot(),
     ModalModule.forRoot(),
     BrowserAnimationsModule,
+    AlertModule.forRoot()
   ],
   exports: [
     BsDropdownModule,
     TooltipModule,
     ModalModule,
+    AlertModule
 
   ]
 })

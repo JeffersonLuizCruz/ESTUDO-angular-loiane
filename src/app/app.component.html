@@ -1,20 +1,57 @@
-<div class="btn-group" dropdown #dropdown="bs-dropdown" [autoClose]="false">
-  <button dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
-    Button dropdown <span class="caret"></span>
-  </button>
-  <ul id="dropdown-triggers-manual" *dropdownMenu class="dropdown-menu"
-      role="menu" aria-labelledby="button-triggers-manual">
-    <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
-    <li role="menuitem"><a class="dropdown-item" href="#">Another action</a>
-    </li>
-    <li role="menuitem"><a class="dropdown-item" href="#">Something else
-      here</a></li>
-    <li class="divider dropdown-divider"></li>
-  </ul>
-</div>
-<button type="button" class="btn btn-primary" (click)="dropdown.toggle(true)">Toggle</button>
-<button type="button" class="btn btn-primary" (click)="dropdown.show()">Show</button>
-<button type="button" class="btn btn-primary" (click)="dropdown.hide()">Hide</button>
+<!--</Jeff>-->
+<!--CLASS E STYLE BINDING: TRÊS MANEIRAS DIFERENTES DE FAZER O PROPERTY BINDING-->
+<article>
+  <h2>Class e Style Binding</h2>
+  <select #classes (change)="0">
+    <option value="alert-success">Sucesso</option>
+    <option value="alert-info">Informação</option>
+    <option value="alert-warning">Alerta</option>
+    <option value="alert-danger">Erro</option>
+    <br />
+    <br />
+    <br />
+  </select>
+  <!--
+    PRIMEIRA MANAIRA:01
+    Class Binding usando interpolação
+  -->
+ <div class="alert {{classes.value}}">Mudar cor do texto conforme a opção</div>
+  <div class="alert" role="alert" [class.alert-success]="classes.value == 'alert-success'">
+    Sucesso!
+  </div>
+  <!--
+    SEGUNDA MANAIRA:02
+    Class Binding usando CLASS
+  -->
+  <div class="alert" role="alert" [class.alert-info]="classes.value == 'alert-info'">
+    Informação!
+  </div>
+  <!--
+    SEGUNDA MANAIRA:02
+    Class Binding usando CLASS
+  -->
+  <div class="alert" role="alert" [class.alert-warning]="classes.value == 'alert-warning'">
+    Alerta!
+  </div>
+  <!--
+    SEGUNDA MANAIRA:02
+    Class Binding usando CLASS
+  -->
+  <div class="alert" role="alert" [class.alert-danger]="classes.value == 'alert-danger'">
+    Erro!
+  </div>
+  <!--
+    TERCEIRA MANAIRA:03
+    PROPERTY BINDING ESTILO DE CLASS
+    style binding
+  -->
+  <div class="alert alert-danger" role="alert"
+   [style.display]="classes.value == 'alert-danger' ? 'block' : 'none'">
+   <p>Mensagem de error</p>
+  </div>
+
+</article>
+<!--</Jeff>-->
 <h1>Meu primeiro Projeto com Angular 2</h1>
 <app-meu-primeiro-componente></app-meu-primeiro-componente>
 <app-meu-primeiro2></app-meu-primeiro2>
