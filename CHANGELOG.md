@@ -1,3 +1,8 @@
+18/04/2022
+Add
+Class e Style binding
+https://www.youtube.com/watch?v=NxtlQSpSgx8&list=PLGxZ4Rq3BOBoSRcKWEdQACbUCNWLczg2G&index=11
+
 17/04/2022
 Add
 Estudo sobre property binding
