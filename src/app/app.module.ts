@@ -6,6 +6,7 @@ import { CursosModule } from './cursos/cursos.module';
 import { MeuPrimeiroComponente } from './meu-primeiro/meu-primeiro.component';
 import { MeuPrimeiro2Component } from './meu-primeiro2/meu-primeiro2.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
+import { AppBootstrapModule } from './app-bootstrap/app-bootstrap.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
     BrowserModule,
     //@Ex-01
     // Esse importe pertence ao modulo curso.module.ts
-    CursosModule
+    CursosModule,
+    AppBootstrapModule
   ],
   providers: [],
   bootstrap: [AppComponent]
