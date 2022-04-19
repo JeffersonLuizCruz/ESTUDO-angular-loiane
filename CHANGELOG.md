@@ -1,3 +1,6 @@
+19/04/2022
+add
+ - Two-way data binding: https://www.youtube.com/watch?v=7PI-2pvLTu8&list=PLGxZ4Rq3BOBoSRcKWEdQACbUCNWLczg2G&index=13
 18/04/2022
 Add
 - Event Binding: https://www.youtube.com/watch?v=WF28rLBangw&list=PLGxZ4Rq3BOBoSRcKWEdQACbUCNWLczg2G&index=12
@@ -7,7 +10,7 @@ MDN: https://developer.mozilla.org/pt-BR/docs/Web/Events
 18/04/2022
 Add
 Class e Style binding
-Quando for usando propriedade usamos [] e quando for usando função no código html usamos ()
+- Quando for usando propriedade usamos [] e quando for usando função no código html usamos ()
 https://www.youtube.com/watch?v=NxtlQSpSgx8&list=PLGxZ4Rq3BOBoSRcKWEdQACbUCNWLczg2G&index=11
 
 17/04/2022
