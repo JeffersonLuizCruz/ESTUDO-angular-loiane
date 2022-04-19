@@ -1,3 +1,31 @@
+<!--
+  Estudando Event binding
+-->
+<article>
+  <div>
+    <!--Exemplo 01-->
+    <button class="btn btn-primary" (click)="clickButton()">
+      Me Clica - 01
+    </button>
+    <input type="text" (keyup)="onKeyUp1($event)">
+    <p>Saída do input1: {{ inputText }}</p>
+    <br>
+    <!--Exemplo 02-->
+    <button class="btn btn-primary" (click)="clickButton()">
+      Me Clica - 02
+    </button>
+    <input type="text"
+    (keyup)="onKeyUp2(getInput.value)" #getInput>
+    <!--getInput.value: O 'value' vem do evento html $event.target.value. -->
+    <p>Saída do input2: {{ salvaValor }}</p>
+    <br>
+    <span (mouseover)="onMouseOver()"
+          (mouseout)="onMouseOver()" [class.highlight] = "isMouseOver">
+      Passe o mouse em mim
+    </span>
+  </div>
+</article>
+
 <!--</Jeff>-->
 <!--CLASS E STYLE BINDING: TRÊS MANEIRAS DIFERENTES DE FAZER O PROPERTY BINDING-->
 <article>
@@ -15,7 +43,12 @@
     PRIMEIRA MANAIRA:01
     Class Binding usando interpolação
   -->
- <div class="alert {{classes.value}}">Mudar cor do texto conforme a opção</div>
+  <div class="alert {{classes.value}}">Mudar cor do texto conforme a opção</div>
+
+  <!--
+    SEGUNDA MANAIRA:02
+    Class Binding usando CLASS
+  -->
   <div class="alert" role="alert" [class.alert-success]="classes.value == 'alert-success'">
     Sucesso!
   </div>
@@ -45,9 +78,8 @@
     PROPERTY BINDING ESTILO DE CLASS
     style binding
   -->
-  <div class="alert alert-danger" role="alert"
-   [style.display]="classes.value == 'alert-danger' ? 'block' : 'none'">
-   <p>Mensagem de error</p>
+  <div class="alert alert-danger" role="alert" [style.display]="classes.value == 'alert-danger' ? 'block' : 'none'">
+    <p>Mensagem de error</p>
   </div>
 
 </article>

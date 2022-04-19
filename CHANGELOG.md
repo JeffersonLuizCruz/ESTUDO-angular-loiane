@@ -1,6 +1,13 @@
 18/04/2022
 Add
+- Event Binding: https://www.youtube.com/watch?v=WF28rLBangw&list=PLGxZ4Rq3BOBoSRcKWEdQACbUCNWLczg2G&index=12
+- Site para consultar Events para ser usando no property binding:
+MDN: https://developer.mozilla.org/pt-BR/docs/Web/Events
+
+18/04/2022
+Add
 Class e Style binding
+Quando for usando propriedade usamos [] e quando for usando função no código html usamos ()
 https://www.youtube.com/watch?v=NxtlQSpSgx8&list=PLGxZ4Rq3BOBoSRcKWEdQACbUCNWLczg2G&index=11
 
 17/04/2022
