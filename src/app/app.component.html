@@ -1,4 +1,9 @@
 <!--
+  REUSANDO COMPONENTES COM INPUT PROPERTY
+-->
+<app-cursos [nome] = "nomeCurso"></app-cursos>
+
+<!--
   Estudo sobre Two-Way Data Binding
 -->
 <app-tow-way-binding></app-tow-way-binding>
@@ -13,20 +18,20 @@
         do componente para o view do html.
       -->
       <input type="text" [value]="nome"/>
-      <p>Meu nome: {{ nome }}</p>
+      <p>Meu nome1: {{ nome }}</p>
 
       <!--
         Exemplo 02: Não é ainda Two-Way Data Binding. Mas é parecido.
        -->
       <input type="text" [value]="nome" (input)="inputNome.value" #inputNome/>
-      <p>Meu nome: {{ inputNome.value }}</p>
+      <p>Meu nome2: {{ inputNome.value }}</p>
 
       <!--
         Exemplo 03: Two Way Data Binding. Esse exemplo se asemelha ao conceito
         bidirecional. html-view <-> compomente
       -->
       <input type="text" [(ngModel)]="nome1">
-      <p>Meu nome: {{ nome1 }}</p>
+      <p>Meu nome3: {{ nome1 }}</p>
 
     </div>
   </article>
@@ -37,14 +42,14 @@
 <article>
   <div>
     <!--Exemplo 01-->
-    <button class="btn btn-primary" (click)="clickButton()">
+    <button class="btn btn-primary" (click)="clickAlert()">
       Me Clica - 01
     </button>
     <input type="text" (keyup)="onKeyUp1($event)">
     <p>Saída do input1: {{ inputText }}</p>
     <br>
     <!--Exemplo 02-->
-    <button class="btn btn-primary" (click)="clickButton()">
+    <button class="btn btn-primary" (click)="clickAlert()">
       Me Clica - 02
     </button>
     <input type="text"
@@ -120,5 +125,4 @@
 <h1>Meu primeiro Projeto com Angular 2</h1>
 <app-meu-primeiro-componente></app-meu-primeiro-componente>
 <app-meu-primeiro2></app-meu-primeiro2>
-<app-cursos></app-cursos>
 <app-data-binding></app-data-binding>

@@ -13,20 +13,21 @@ export class AppComponent {
   isMouseOver:boolean = false;
   nome:string = 'Unidirecional';
   nome1:string = '';
+  nomeCurso = 'Curso de Angular 2';
 
-  clickButton(){
+  clickAlert(): void{
     alert('Alerta');
   }
 
-  onKeyUp1(event: any){
+  onKeyUp1(event: any): void{
     console.log(event);
     this.inputText = event.target.value;
   }
-  onKeyUp2(event: any){
+  onKeyUp2(event: any): void{
     this.salvaValor = event;
   }
 
-  onMouseOver(){
+  onMouseOver(): void{
     this.isMouseOver = !this.isMouseOver;
   }
 }
