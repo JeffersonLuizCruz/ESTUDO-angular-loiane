@@ -1,4 +1,37 @@
 <!--
+  Estudo sobre Two-Way Data Binding
+-->
+<app-tow-way-binding></app-tow-way-binding>
+<section class="two-way-binding">
+  <h1>Two Way Data Binding</h1>
+  <article>
+    <div>
+      <!--
+        Exemplo 01: Não é two-way data binding. É um property binding
+        O property binding lembra muito o conceito unidirecional do relacionamento
+        de entidades. - [value]="nome" -> html - Variável nome segue o sentido
+        do componente para o view do html.
+      -->
+      <input type="text" [value]="nome"/>
+      <p>Meu nome: {{ nome }}</p>
+
+      <!--
+        Exemplo 02: Não é ainda Two-Way Data Binding. Mas é parecido.
+       -->
+      <input type="text" [value]="nome" (input)="inputNome.value" #inputNome/>
+      <p>Meu nome: {{ inputNome.value }}</p>
+
+      <!--
+        Exemplo 03: Two Way Data Binding. Esse exemplo se asemelha ao conceito
+        bidirecional. html-view <-> compomente
+      -->
+      <input type="text" [(ngModel)]="nome1">
+      <p>Meu nome: {{ nome1 }}</p>
+
+    </div>
+  </article>
+</section>
+<!--
   Estudando Event binding
 -->
 <article>

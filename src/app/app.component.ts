@@ -11,6 +11,8 @@ export class AppComponent {
   inputText:string = '';
   salvaValor:string = '';
   isMouseOver:boolean = false;
+  nome:string = 'Unidirecional';
+  nome1:string = '';
 
   clickButton(){
     alert('Alerta');
