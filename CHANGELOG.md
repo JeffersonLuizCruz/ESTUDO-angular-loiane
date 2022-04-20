@@ -1,3 +1,8 @@
+20/04/2002
+Add
+Estudo sobre Two-Way Data Binding
+https://www.youtube.com/watch?v=7PI-2pvLTu8&list=PLGxZ4Rq3BOBoSRcKWEdQACbUCNWLczg2G&index=14
+
 19/04/2022
 add
  - Two-way data binding: https://www.youtube.com/watch?v=7PI-2pvLTu8&list=PLGxZ4Rq3BOBoSRcKWEdQACbUCNWLczg2G&index=13
