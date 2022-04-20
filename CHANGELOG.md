@@ -1,3 +1,8 @@
+20/04/2022
+Add
+Estudo com Componentes com Input properties: 
+https://www.youtube.com/watch?v=G2cBpYZ0fzk&list=PLGxZ4Rq3BOBoSRcKWEdQACbUCNWLczg2G&index=14
+
 20/04/2002
 Add
 Estudo sobre Two-Way Data Binding
