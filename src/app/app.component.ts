@@ -13,7 +13,8 @@ export class AppComponent {
   isMouseOver:boolean = false;
   nome:string = 'Unidirecional';
   nome1:string = '';
-  nomeCurso = 'Curso de Angular 2';
+  nomeCurso:string = 'Curso de Angular 2';
+  valorInicial:number = 10;
 
   clickAlert(): void{
     alert('Alerta');
@@ -29,5 +30,10 @@ export class AppComponent {
 
   onMouseOver(): void{
     this.isMouseOver = !this.isMouseOver;
+  }
+
+  onMudouValor(evento: any): void{
+    console.log(evento);
+    console.log(evento.novoValor);
   }
 }

@@ -9,6 +9,7 @@ import { MeuPrimeiro2Component } from './meu-primeiro2/meu-primeiro2.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { AppBootstrapModule } from './app-bootstrap/app-bootstrap.module';
 import { TowWayBindingComponent } from './tow-way-binding/tow-way-binding.component';
+import { OutputPropertyComponent } from './output-property/output-property.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { TowWayBindingComponent } from './tow-way-binding/tow-way-binding.compon
     MeuPrimeiro2Component,
     DataBindingComponent,
     TowWayBindingComponent,
+    OutputPropertyComponent,
   ],
   imports: [
     // Aqui eu importo os módulos criado pelo CLI ng g m nome_modulo

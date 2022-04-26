@@ -1,4 +1,11 @@
 <!--
+  Emitindo Eventos com Output properties:
+https://www.youtube.com/watch?v=Lbwk8oDJrCU&list=PLGxZ4Rq3BOBoSRcKWEdQACbUCNWLczg2G&index=15
+
+-->
+<app-output-property [mudaValor]="valorInicial"
+ (eventoMudouValor)="onMudouValor($event)"></app-output-property>
+<!--
   REUSANDO COMPONENTES COM INPUT PROPERTY
 -->
 <app-cursos [nome] = "nomeCurso"></app-cursos>
